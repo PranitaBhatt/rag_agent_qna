@@ -1,10 +1,64 @@
-venv/
-*.dll
-*.lib
-*.bin
-*.safetensors
+# 🐍 Python bytecode
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
-.env
+
+# 🚫 Virtual environments
+venv/
+.env/
+
+# 📦 Distribution and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 🔒 Environment and config
+*.env
+.env.*
+*.ini
+*.cfg
+
+# ⚙️ OS-specific junk
 .DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# 🧠 Machine Learning model weights
+*.bin
+*.lib
+*.dll
+*.safetensors
+*.ckpt
+*.h5
+*.pt
+*.pth
+*.pb
+
+# 📓 Jupyter
+.ipynb_checkpoints/
+
+# 📂 IDE/editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 🧪 Test and coverage
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# 🧪 PyInstaller
+*.spec
+
+# 🔧 Logs and debugging
+*.log
+*.out
+*.err
+
+# 🔁 Git
+.git/
