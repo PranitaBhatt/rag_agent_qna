@@ -1,0 +1,10 @@
+venv/
+*.dll
+*.lib
+*.bin
+*.safetensors
+__pycache__/
+*.pyc
+*.pyo
+.env
+.DS_Store
