@@ -82,4 +82,3 @@ langchain-huggingface
 sentence-transformers
 faiss-cpu
 setuptools
-distutils
