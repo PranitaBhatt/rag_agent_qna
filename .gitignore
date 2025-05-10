@@ -35,11 +35,7 @@ desktop.ini
 *.pt
 *.pth
 *.pb
-# 👇 Keep model weight exclusion, but ALLOW FAISS index files
-+ *.bin
-+ !vector_store/*.bin
-+ !vector_store/*.faiss
-+ !vector_store/*.pkl
+
 
 # 📓 Jupyter
 .ipynb_checkpoints/

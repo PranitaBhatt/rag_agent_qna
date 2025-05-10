@@ -5,11 +5,23 @@ from langchain.schema import Document
 
 def retrieve(query):
     try:
-        model_path = os.path.abspath("./models/paraphrase-MiniLM-L3-v2")
+        # Resolve base directory relative to this script
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+        # Construct model and FAISS index paths
+        model_path = os.path.join(BASE_DIR, "models", "paraphrase-MiniLM-L3-v2")
+        vector_store_path = os.path.join(BASE_DIR, "vector_store")
+
+        # Debug: Optional print to confirm paths
+        if not os.path.exists(model_path):
+            print(f"❌ Model path does not exist: {model_path}")
+        if not os.path.exists(vector_store_path):
+            print(f"❌ Vector store path does not exist: {vector_store_path}")
+
         embeddings = HuggingFaceEmbeddings(model_name=model_path)
 
         # Load FAISS vector store
-        db = FAISS.load_local("vector_store", embeddings, allow_dangerous_deserialization=True)
+        db = FAISS.load_local(vector_store_path, embeddings, allow_dangerous_deserialization=True)
 
         # Perform similarity search
         docs = db.similarity_search(query, k=3)
