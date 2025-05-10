@@ -81,4 +81,4 @@ zipp==3.20.2
 langchain-huggingface
 sentence-transformers
 faiss-cpu
-setuptools====58.0.0 
+setuptools==58.0.0
