@@ -2570,8 +2570,8 @@ A: Product Z is compatible with Windows, macOS, Android, and iOS.
 
 Q: What is the battery life of Product Z?
 A: Product Z offers up to 13 hours of continuous use.
-What is the materials of Product X?
-Q: 
+
+Q: What is the materials of Product X?
 A: Product X is built with aerospace-grade aluminum and tempered glass.
 
 Q: What is the discount eligibility of SmartDevice Mini?

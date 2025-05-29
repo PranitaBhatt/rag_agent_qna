@@ -7,7 +7,9 @@ from tools import calculator_tool, dictionary_tool
 
 # Load environment variables from .env
 load_dotenv()
-api_key = os.getenv("QNA_APIKEY")
+api_key = os.getenv("QNA_APIKEY")  # This must be below load_dotenv()
+
+print("[DEBUG] QNA_APIKEY loaded:", api_key)
 
 # Ensure the key is loaded
 if not api_key:
